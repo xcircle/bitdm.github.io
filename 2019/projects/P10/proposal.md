@@ -26,13 +26,13 @@ IPFIX即IP Flow Information Export，IP数据流信息输出，它是由IETF公�
 输出格式具有较强的可扩展性，因此如果流量监控的要求发生改变，网络管理员也可通过修改相应配置来实现，不必升级网络设备软件或管理工具。
 为了较完整的输出数据，IPFIX缺省使用网络设备的七个关键域来表示每股网络流量：源IP地址，目的IP地址，TCP/UDP源端口，TCP/UDP目的端口，三层协议类型，服务类型（Type-of-service）字节，输入逻辑接口
 图一为1月20号12点53分51秒时刻的一条流日志信息。
-##### 图片一
- ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%201.png)
- ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%202.png)
+##### 图1 流日志信息
+![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%201.png)
+##### 图2 流日志属性介绍
+![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%202.png)
 
-##### 1.1.2云环境网络流量
+##### 1.1.2、云环境网络流量
 云计算在今天已经是日渐成熟的产业，小中型的企业都相信云计算的稳定性和高性价比，现在的商用APP都倾向于把应用“上云”减少成本和维护费用。而云服务商像阿里则承载着众多应用的每日负载，责任重大，保证任何时候服务器和带宽都处于稳定状态不发生或者减少意外情况的发生。通常网络带宽是随着时间而改变的，例如双十一的时候网络会急剧增加到平时的十倍或百倍以上，平常时候网络的流量也有一定的pattern隐含在流量之中。
-
 
 #### 1.2、问题描述
 
@@ -40,6 +40,7 @@ IPFIX即IP Flow Information Export，IP数据流信息输出，它是由IETF公�
 
 #### 2.1 数据准备
 我们找来了阿里云内部的一个真实流日志数据集，是YY公司在阿里云服务器上线运行时产生的25分钟左右的数据。通过图3可以看出数据在17:20-17:35这15分钟之内比较稳定，之前和之后的数据包含了一些噪声不适合做统计分析。我们取出这15分钟数据，并把前十分钟数据用作统计数据，后五分钟用作验证数据。
+##### 图3 不同时刻用户的PV数据图
   ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%203.png)
 
 #### 2.2 模型建立
