@@ -49,7 +49,7 @@ IPFIX即IP Flow Information Export，IP数据流信息输出，它是由IETF公�
 在统计学中，通常是建立一个线性模型来拟合该时间序列的趋势。其中，AR、MA、ARMA以及ARIMA都是较为常见的模型。
 ##### 2.2.1、AR(Auto Regressive Model)自回归模型
 AR是线性时间序列分析模型中最简单的模型。通过自身前面部分的数据与后面部分的数据之间的相关关系（自相关）来建立回归方程，从而可以进行预测或者分析。下图中展示了一个时间如果可以表示成如下结构，那么就说明它服从p阶的自回归过程，表示为AR(p)。其中，ut表示白噪声，是时间序列中的数值的随机波动，但是这些波动会相互抵消，最终是0。theta表示自回归系数。<br/>
- ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/image7.png)
+ ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/image7.png)<br/>
 所以当只有一个时间记录点时，称为一阶自回归过程，即AR(1)。<br/>
  ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/image8.png)
 ##### 2.2.2、MA(Moving Average Model)移动平均模型
@@ -57,7 +57,7 @@ AR是线性时间序列分析模型中最简单的模型。通过自身前面部
  ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/image9.png)
 ##### 2.2.3、ARMA(Auto Regressive and Moving Average Model)自回归移动平均模型
 自回归移动平均模型是与自回归和移动平均模型两部分组成。所以可以表示为ARMA(p, q)。p是自回归阶数，q是移动平均阶数。<br/>
- ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/image10.png)
+ ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/image10.png)<br/>
 从式子中就可以看出，自回归模型结合了两个模型的特点，其中，AR可以解决当前数据与后期数据之间的关系，MA则可以解决随机变动也就是噪声的问题。
 ##### 2.2.4、ARIMA(Auto Regressive Integrate Moving Average Model)差分自回归移动平均模型
 同前面的三种模型，ARIMA模型也是基于平稳的时间序列的或者差分化后是稳定的，另外前面的几种模型都可以看作ARIMA的某种特殊形式。表示为ARIMA(p, d, q)。p为自回归阶数，q为移动平均阶数，d为时间成为平稳时所做的差分次数，也就是Integrate单词的在这里的意思。
