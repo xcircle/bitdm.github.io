@@ -29,7 +29,7 @@ IPFIX即IP Flow Information Export，IP数据流信息输出，它是由IETF公�
 ##### 图1 流日志信息
 <div class="fig figcenter fighighlight">
     <div class="figcaption">标题</div>
-    <a href="images/图片%201.png"><img src="images图片%201.png" ></a>
+    <a href="image/图片%201.png"><img src="image/图片%201.png" ></a>
 </div>
 ##### 图2 流日志属性介绍
 ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%202.png)
