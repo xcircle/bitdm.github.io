@@ -27,7 +27,10 @@ IPFIX即IP Flow Information Export，IP数据流信息输出，它是由IETF公�
 为了较完整的输出数据，IPFIX缺省使用网络设备的七个关键域来表示每股网络流量：源IP地址，目的IP地址，TCP/UDP源端口，TCP/UDP目的端口，三层协议类型，服务类型（Type-of-service）字节，输入逻辑接口
 图一为1月20号12点53分51秒时刻的一条流日志信息。
 ##### 图1 流日志信息
-![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%201.png)
+<div class="fig figcenter fighighlight">
+    <div class="figcaption">标题</div>
+    <a href="images/图片%201.png"><img src="images图片%201.png" ></a>
+</div>
 ##### 图2 流日志属性介绍
 ![image](https://github.com/xcircle/bitdm.github.io/blob/master/2019/projects/P10/image/图片%202.png)
 
